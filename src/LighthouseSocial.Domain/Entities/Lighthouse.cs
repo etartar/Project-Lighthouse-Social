@@ -20,5 +20,6 @@ public class Lighthouse : EntityBase
     public int CountryId { get; private set; }
     public Country Country { get; private set; }
     public Coordinates Location { get; private set; }
+
     public List<Photo> Photos { get; } = [];
 }

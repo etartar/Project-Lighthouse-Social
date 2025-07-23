@@ -21,5 +21,6 @@ public class Photo : EntityBase
     public string Filename { get; private set; }
     public DateTime UploadDate { get; private set; }
     public PhotoMetadata Metadata { get; private set; }
+
     public List<Comment> Comments { get; } = [];
 }

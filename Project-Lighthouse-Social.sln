@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36310.24 d17.14
+VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LighthouseSocial.Domain", "src\LighthouseSocial.Domain\LighthouseSocial.Domain.csproj", "{62AB49C5-4E16-47DA-9818-C63DAB4C0C5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LighthouseSocial.Application", "src\LighthouseSocial.Application\LighthouseSocial.Application.csproj", "{A56FABF3-EF1C-4D31-AB81-CD7B43011FAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,12 +24,17 @@ Global
 		{62AB49C5-4E16-47DA-9818-C63DAB4C0C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62AB49C5-4E16-47DA-9818-C63DAB4C0C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62AB49C5-4E16-47DA-9818-C63DAB4C0C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56FABF3-EF1C-4D31-AB81-CD7B43011FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56FABF3-EF1C-4D31-AB81-CD7B43011FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56FABF3-EF1C-4D31-AB81-CD7B43011FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56FABF3-EF1C-4D31-AB81-CD7B43011FAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{62AB49C5-4E16-47DA-9818-C63DAB4C0C5E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{A56FABF3-EF1C-4D31-AB81-CD7B43011FAB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {53BBF617-958A-44F7-BA70-C970E055833E}
