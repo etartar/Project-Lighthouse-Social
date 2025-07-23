@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/LighthouseSocial.Domain/bin
+/src/LighthouseSocial.Domain/obj
