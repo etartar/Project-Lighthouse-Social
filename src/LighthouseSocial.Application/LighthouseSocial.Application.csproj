@@ -11,8 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Lighthouses\" />
-    <Folder Include="Features\Photos\" />
+    <Folder Include="Features\Comments\AddComment\" />
+    <Folder Include="Features\Comments\DeleteComment\" />
+    <Folder Include="Features\Comments\GetCommentsByPhoto\" />
   </ItemGroup>
 
 </Project>
