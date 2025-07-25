@@ -6,3 +6,6 @@
 /src/LighthouseSocial.Domain/bin
 /src/LighthouseSocial.Domain/obj
 /src/LighthouseSocial.Application/obj
+
+bin
+obj
