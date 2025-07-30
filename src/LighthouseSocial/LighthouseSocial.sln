@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{64081A76-4F6E-4200-B49B-0EC9BC172BDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{692B3CF7-DB0E-4161-B522-ACA6790DC3F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LighthouseSocial.UnitTests", "tests\LighthouseSocial.UnitTests\LighthouseSocial.UnitTests.csproj", "{DD3E555C-382A-48DB-832A-94A380BA7DC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LighthouseSocial.Domain", "LighthouseSocial.Domain\LighthouseSocial.Domain.csproj", "{B3002C86-DD0F-4326-9DF5-1A58C7616728}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LighthouseSocial.Application", "LighthouseSocial.Application\LighthouseSocial.Application.csproj", "{8DB8B9D9-56E2-469C-8EB0-37422BA4C46A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LighthouseSocial.Infrastructure", "LighthouseSocial.Infrastructure\LighthouseSocial.Infrastructure.csproj", "{5017704D-D51A-493C-82B2-6FDB17D5B22A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD3E555C-382A-48DB-832A-94A380BA7DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3E555C-382A-48DB-832A-94A380BA7DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3E555C-382A-48DB-832A-94A380BA7DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3E555C-382A-48DB-832A-94A380BA7DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3002C86-DD0F-4326-9DF5-1A58C7616728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3002C86-DD0F-4326-9DF5-1A58C7616728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3002C86-DD0F-4326-9DF5-1A58C7616728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3002C86-DD0F-4326-9DF5-1A58C7616728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB8B9D9-56E2-469C-8EB0-37422BA4C46A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB8B9D9-56E2-469C-8EB0-37422BA4C46A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB8B9D9-56E2-469C-8EB0-37422BA4C46A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB8B9D9-56E2-469C-8EB0-37422BA4C46A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5017704D-D51A-493C-82B2-6FDB17D5B22A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5017704D-D51A-493C-82B2-6FDB17D5B22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5017704D-D51A-493C-82B2-6FDB17D5B22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5017704D-D51A-493C-82B2-6FDB17D5B22A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD3E555C-382A-48DB-832A-94A380BA7DC3} = {64081A76-4F6E-4200-B49B-0EC9BC172BDA}
+		{B3002C86-DD0F-4326-9DF5-1A58C7616728} = {692B3CF7-DB0E-4161-B522-ACA6790DC3F1}
+		{8DB8B9D9-56E2-469C-8EB0-37422BA4C46A} = {692B3CF7-DB0E-4161-B522-ACA6790DC3F1}
+		{5017704D-D51A-493C-82B2-6FDB17D5B22A} = {692B3CF7-DB0E-4161-B522-ACA6790DC3F1}
+	EndGlobalSection
+EndGlobal
