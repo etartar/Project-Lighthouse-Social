@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LighthouseSocial.Applicatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LighthouseSocial.Infrastructure", "LighthouseSocial.Infrastructure\LighthouseSocial.Infrastructure.csproj", "{5017704D-D51A-493C-82B2-6FDB17D5B22A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LighthouseSocial.Integration.Tests", "tests\LighthouseSocial.Integration.Tests\LighthouseSocial.Integration.Tests.csproj", "{D0664772-BC60-40B5-9B91-2FCACC54E66B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LighthouseSocial.Data", "LighthouseSocial.Data\LighthouseSocial.Data.csproj", "{2A0A0320-FC5E-4029-B4FA-2557CADBC3EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +40,14 @@ Global
 		{5017704D-D51A-493C-82B2-6FDB17D5B22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5017704D-D51A-493C-82B2-6FDB17D5B22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5017704D-D51A-493C-82B2-6FDB17D5B22A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0664772-BC60-40B5-9B91-2FCACC54E66B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0664772-BC60-40B5-9B91-2FCACC54E66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0664772-BC60-40B5-9B91-2FCACC54E66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0664772-BC60-40B5-9B91-2FCACC54E66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A0A0320-FC5E-4029-B4FA-2557CADBC3EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A0A0320-FC5E-4029-B4FA-2557CADBC3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A0A0320-FC5E-4029-B4FA-2557CADBC3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A0A0320-FC5E-4029-B4FA-2557CADBC3EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,5 +57,7 @@ Global
 		{B3002C86-DD0F-4326-9DF5-1A58C7616728} = {692B3CF7-DB0E-4161-B522-ACA6790DC3F1}
 		{8DB8B9D9-56E2-469C-8EB0-37422BA4C46A} = {692B3CF7-DB0E-4161-B522-ACA6790DC3F1}
 		{5017704D-D51A-493C-82B2-6FDB17D5B22A} = {692B3CF7-DB0E-4161-B522-ACA6790DC3F1}
+		{D0664772-BC60-40B5-9B91-2FCACC54E66B} = {64081A76-4F6E-4200-B49B-0EC9BC172BDA}
+		{2A0A0320-FC5E-4029-B4FA-2557CADBC3EF} = {692B3CF7-DB0E-4161-B522-ACA6790DC3F1}
 	EndGlobalSection
 EndGlobal

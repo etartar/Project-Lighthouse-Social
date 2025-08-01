@@ -6,8 +6,9 @@ public class User : EntityBase
 {
     protected User() { }
 
-    public User(string fullname, string email)
+    public User(Guid id, string fullname, string email)
     {
+        Id = id != Guid.Empty ? id : Guid.NewGuid();
         Fullname = fullname;
         Email = email;
     }

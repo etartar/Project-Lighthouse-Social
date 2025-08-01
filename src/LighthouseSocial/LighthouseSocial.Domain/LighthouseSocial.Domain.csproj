@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <InternalsVisibleTo Include="LighthouseSocial.UnitTests"/>
+    <InternalsVisibleTo Include="LighthouseSocial.Integration.Tests"/>
   </ItemGroup>
 
 </Project>
