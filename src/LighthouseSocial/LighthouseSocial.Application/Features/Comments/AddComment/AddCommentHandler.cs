@@ -42,7 +42,7 @@ public class AddCommentHandler(
             return Result<Guid>.Failure("Comment contains inappropriate language");
         }
 
-        var comment = new Comment(dto.UserId, dto.PhotoId, dto.Text, Rating.FromValue(dto.Rating));
+        var comment = new Comment(Guid.NewGuid(), dto.UserId, dto.PhotoId, dto.Text, Rating.FromValue(dto.Rating));
 
         await commentRepository.AddAsync(comment);
 

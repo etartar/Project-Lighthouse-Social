@@ -24,7 +24,7 @@ public class UploadPhotoHandler(IPhotoStorageService storageService, IPhotoRepos
 
         var metaData = new PhotoMetadata("N/A", "Unknown", dto.CameraType, dto.UploadedAt);
 
-        var photo = new Photo(dto.UserId, dto.LighthouseId, savedPath, metaData);
+        var photo = new Photo(dto.Id, dto.UserId, dto.LighthouseId, savedPath, metaData);
 
         await photoRepository.AddAsync(photo);
 

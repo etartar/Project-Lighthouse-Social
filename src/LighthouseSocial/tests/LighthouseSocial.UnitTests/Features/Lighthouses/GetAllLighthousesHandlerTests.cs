@@ -24,8 +24,8 @@ public class GetAllLighthousesHandlerTests
         // Arrange
         var lighthouses = new List<Lighthouse>
         {
-            new("Roman Rock", new Country(27, "South Africa"), new Coordinates(34.10, 34.15)),
-            new("Green Point", new Country(27, "South Africa"), new Coordinates(24.10, 22.05))
+            new(Guid.NewGuid(), "Roman Rock", new Country(27, "South Africa"), new Coordinates(34.10, 34.15)),
+            new(Guid.NewGuid(), "Green Point", new Country(27, "South Africa"), new Coordinates(24.10, 22.05))
         };
 
         _lighthouseRepositoryMock.Setup(repo => repo.GetAllAsync()).Returns(Task.FromResult(lighthouses.AsEnumerable()));

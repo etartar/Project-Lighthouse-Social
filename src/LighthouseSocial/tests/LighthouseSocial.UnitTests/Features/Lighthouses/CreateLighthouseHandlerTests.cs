@@ -31,7 +31,7 @@ public class CreateLighthouseHandlerTests
         var dto = new LighthouseDto(Guid.Empty, "Roman Rock", 27, 34.10, 34.13);
         var country = new Country(27, "South Africa");
 
-        _registryMock.Setup(r => r.GetById(dto.CountryId)).Returns(country);
+        _registryMock.Setup(r => r.GetByIdAsync(dto.CountryId)).ReturnsAsync(country);
         _validatorMock.Setup(v => v.Validate(It.IsAny<LighthouseDto>())).Returns(new ValidationResult());
 
         // Act
@@ -50,7 +50,7 @@ public class CreateLighthouseHandlerTests
         // Arrange
         var dto = new LighthouseDto(Guid.Empty, "Roman Rock", 27, 34.10, 34.13);
 
-        _registryMock.Setup(r => r.GetById(It.IsAny<int>())).Throws(new Exception("Invalid country"));
+        _registryMock.Setup(r => r.GetByIdAsync(It.IsAny<int>())).ThrowsAsync(new Exception("Invalid country"));
         _validatorMock.Setup(v => v.Validate(It.IsAny<LighthouseDto>())).Returns(new ValidationResult());
 
         // Act

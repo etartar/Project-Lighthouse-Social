@@ -18,4 +18,3 @@ public class CountryRegistry(IEnumerable<Country> countries)
              : throw new KeyNotFoundException($"Country id not found:{id}"));
     }
 }
-}
