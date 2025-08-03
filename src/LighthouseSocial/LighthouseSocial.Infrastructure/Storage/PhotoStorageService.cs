@@ -24,7 +24,21 @@ internal sealed class PhotoStorageService : IPhotoStorageService
 
     public async Task<Stream> GetAsync(string filePath)
     {
-        throw new NotImplementedException();
+        using (var ms = new MemoryStream())
+        {
+            await _minioClient.GetObjectAsync(
+                new GetObjectArgs()
+                    .WithBucket(_bucketName)
+                    .WithObject(filePath)
+                    .WithCallbackStream((stream) =>
+                    {
+                        stream.CopyTo(ms);
+                    }));
+
+            ms.Position = 0;
+
+            return ms;
+        }
     }
 
     public async Task<string> SaveAsync(Stream content, string fileName)
@@ -49,6 +63,9 @@ internal sealed class PhotoStorageService : IPhotoStorageService
 
     public async Task DeleteAsync(string filePath)
     {
-        throw new NotImplementedException();
+        await _minioClient.RemoveObjectAsync(
+            new RemoveObjectArgs()
+                .WithBucket(_bucketName)
+                .WithObject(filePath));
     }
 }

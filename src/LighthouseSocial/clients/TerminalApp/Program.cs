@@ -2,6 +2,8 @@
 using LighthouseSocial.Application.Contracts;
 using LighthouseSocial.Application.Dtos;
 using LighthouseSocial.Data;
+using LighthouseSocial.Infrastructure;
+using LighthouseSocial.Infrastructure.Storage;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -18,6 +20,9 @@ var connStr = config.GetConnectionString("LighthouseDb");
 //todo@buraksenyurt Connection string bilgisini güvenli bir şekilde saklamalıyız. Secure Vault, Azure Key Vault gibi çözümler kullanılabilir.
 services.AddDatabase(connStr ?? "Host=localhost;Port=5432;Database=lighthousedb;Username=johndoe;Password=somew0rds");
 services.AddApplication();
+services.AddInfrastructure();
+
+services.Configure<MinioSettings>(config.GetSection("Minio"));
 
 var serviceProvider = services.BuildServiceProvider();
 var lighthouseService = serviceProvider.GetRequiredService<ILighthouseService>();
@@ -58,6 +63,16 @@ try
     }
 
     //todo@buraksenyurt Tam bir flow test edelim
+
+    var photoService = serviceProvider.GetRequiredService<IPhotoService>();
+
+    var file = File.OpenRead("");
+
+    var userId = ;
+
+    var photoDto = new PhotoDto(Guid.NewGuid(), userId, lighthouse.Id, "cape_espichel.jpg", DateTime.UtcNow.AddDays(-7), "Canon EOS 5D Mark IV");
+
+    var createdPhoto = await photoService.UploadAsync(photoDto, file);
 
     // Deniz feneri bilgisi ekle
     // Deniz fenerine fotoğraf ekle
